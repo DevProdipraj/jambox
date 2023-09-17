@@ -1,0 +1,301 @@
+/* Header Section CSS Start */
+.header-nav {
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.header-nav.sticky {
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(173 173 173) 0px 0px 3px 1px;
+}
+.sticky .menu ul li a {
+  color: #000;
+}
+.sticky.login-btn {
+  color: #ffffff !important;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.logo {
+  max-width: 10rem;
+}
+
+nav .menu ul {
+  display: flex;
+}
+nav .menu ul li {
+  list-style: none;
+  margin-left: 3rem;
+}
+nav .menu ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Sailec;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+nav .menu ul li a:hover {
+  color: #ff723a;
+}
+a.login-btn {
+  background: #df5156;
+  color: #fff !important;
+  font-weight: 300 !important;
+  padding: 1.1rem 2.7rem;
+  margin-left: 18rem;
+  border-radius: 2.5rem;
+  transition: all 250ms;
+}
+a.login-btn:hover {
+  opacity: 0.8;
+}
+a.login-btn {
+  margin-left: 0;
+}
+
+nav .menu-toggler {
+  background: none;
+  border: none;
+  outline: none;
+  width: 3rem;
+  z-index: 999;
+  display: none;
+}
+nav .menu-toggler span {
+  position: relative;
+  display: block;
+  background: #09b6df;
+  height: 0.3rem;
+  margin: 0.7rem 0;
+  border-radius: 1rem;
+}
+
+/* Header Section CSS End */
+
+/* Footer Section CSS Start */
+
+#Footer {
+  padding-top: 10rem;
+}
+
+.footer-wrapper {
+  background-image: url(../images/footer-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-nav {
+  padding-top: 15rem;
+}
+.footer-logo {
+  max-width: 10rem;
+}
+
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu ul li {
+  margin-left: 3rem;
+}
+
+.footer-menu ul li a {
+  font-family: "Sailec";
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 300;
+}
+.footer-menu ul li a:hover {
+  color: #ff723a;
+}
+
+hr.footer-hr {
+  color: #cfd5e4;
+  margin: 3rem 0;
+}
+.footer-copy {
+  display: flex;
+}
+.footer-copy li {
+  text-decoration: underline;
+}
+
+.footer-copy li,
+.footer-copy a {
+  list-style: none;
+  font-family: "Graphik";
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.footer-copy a {
+  text-decoration: underline;
+  margin-left: 2.5rem;
+}
+.footer-copy a:first-child {
+  margin-left: 0rem;
+}
+.footer-social {
+  font-size: 1.5rem;
+}
+
+.footer-social i {
+  margin-left: 1rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5rem;
+}
+.footer-social i:hover {
+  background: #fff;
+  color: #5919ad;
+}
+
+/* Footer Section CSS End */
+
+/* Responsive CSS for Menu */
+
+@media (max-width: 991px) {
+  .container {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  nav {
+    line-height: 70px;
+  }
+  .header-nav {
+    background: #fff;
+  }
+
+  .menu-toggler {
+    display: block !important;
+    margin: 0 50px;
+  }
+
+  .menu {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #ffffff;
+    top: 90px;
+    right: -100%;
+    transition: all 0.4s linear;
+  }
+  nav .menu ul li a {
+    color: #000 !important;
+  }
+  .logo {
+    padding-left: 3rem;
+  }
+
+  nav .menu ul li a.login-btn {
+    margin-left: 0;
+    color: #fff !important;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .menu.active {
+    right: 0;
+  }
+
+  .menu-toggler span {
+    transition: all 0.2s linear;
+  }
+  .menu-toggler.active span:first-child {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  .menu-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggler.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 10px;
+  }
+}
+
+/* Footer CSS Start */
+
+@media (min-width: 300px) and (max-width: 767px) {
+  /* Nav Css */
+  .logo img {
+    max-width: 8rem;
+  }
+  .footer-logo img {
+    width: 8rem;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-logo {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .footer-nav {
+    padding-top: 6rem;
+    padding-bottom: 0;
+  }
+  .footer-menu ul {
+    display: block;
+    text-align: center;
+  }
+  .footer-menu ul {
+    padding-left: 0;
+  }
+  .footer-menu ul li {
+    margin-left: 0;
+  }
+  .footer-menu ul li {
+    padding-bottom: 1.7rem;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-social {
+    padding: 3rem 0;
+  }
+  .footer-copy {
+    display: block;
+  }
+  .footer-copy a {
+    text-decoration: underline;
+    margin-left: 2.5rem;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo img {
+    max-width: 9rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .footer-wrapper {
+    height: 45vh;
+  }
+  .footer-nav {
+    padding-top: 17rem;
+  }
+}

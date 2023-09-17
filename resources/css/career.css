@@ -1,0 +1,271 @@
+/* Base CSS Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #f6f6f6;
+}
+
+/* Adding Fonts */
+
+/* Sailec Font */
+
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecLight.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecRegular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecMedium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecBold.otf);
+  font-weight: 700;
+}
+
+/* Graphik Font */
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikRegular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikMedium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikSemibold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikBold.otf);
+  font-weight: 700;
+}
+
+/* :root {
+    --gray: #f5f5f5;
+  } */
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+/* Base Style End */
+
+/* Header Section CSS Start */
+
+.header-wrapper {
+  background-image: url(../images/career-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header Section CSS End */
+
+/* Career Hero Section CSS Start */
+section#Career-hero {
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+.career-hero-content h1 {
+  font-family: "Sailec";
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.career-hero-img {
+  max-width: 65%;
+  margin: auto;
+}
+
+/* Career Hero Section CSS End */
+
+/* Career Open Section CSS Start */
+
+section#Career-open {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+section#Career-closed {
+  padding-bottom: 6rem;
+}
+
+.career-title h2 {
+  font-family: "Sailec";
+  font-size: 2.7rem;
+}
+
+.career-open-box,
+.career-closed-box {
+  position: relative;
+  background: #ffffff;
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+.career-open-box::after,
+.career-closed-box::after {
+  position: absolute;
+  content: "";
+  background: #1bc6ef;
+  width: 100%;
+  height: 100%;
+  top: 13px;
+  left: 13px;
+  border-radius: 1rem;
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+  z-index: -1;
+}
+
+.career-open-box:hover::after,
+.career-closed-box:hover::after {
+  opacity: 1;
+}
+
+.career-open-box span,
+.career-closed-box span {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #ff9417;
+  border-radius: 5rem;
+  top: 21px;
+}
+span.span-orange {
+  background: #ff9417;
+}
+span.span-green {
+  background: #78d072;
+}
+span.span-sky {
+  background: #78f9e3;
+}
+span.span-pink {
+  background: #e962ff;
+}
+span.span-blue {
+  background: #667eff;
+}
+span.span-red {
+  background: #ee6363;
+}
+
+.career-open-box h5,
+.career-closed-box h5 {
+  font-family: "Sailec";
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #2d3740e6;
+  padding-left: 1.8rem;
+}
+
+.career-open-box h3,
+.career-closed-box h3 {
+  font-family: "Sailec";
+  color: #36434e;
+  padding-top: 0.5rem;
+}
+
+.career-location {
+  display: flex;
+  align-items: center;
+}
+
+.career-location i {
+  color: #2d3740;
+  font-size: 1.3rem;
+}
+
+.career-location p {
+  font-family: "Graphik";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #363c42;
+  padding-top: 1rem;
+  padding-left: 0.4rem;
+}
+
+/* Career Open Section CSS End */
+
+/* ============================= */
+/* Career Page Responsive CSS */
+/* ============================= */
+
+@media (min-width: 300px) and (max-width: 767px) {
+  /* Nav Css */
+  .logo img {
+    max-width: 8rem;
+  }
+  .career-hero-img {
+    padding-bottom: 5rem;
+  }
+  .career-hero-content {
+    padding: 3rem 0;
+    text-align: center;
+  }
+  .career-hero-content h1 {
+    font-size: 4rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  section#Career-open {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo img {
+    max-width: 9rem;
+  }
+  .career-hero-content {
+    padding-left: 3rem;
+  }
+  .career-hero-content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  .form-hero-content h1 {
+    font-size: 6rem;
+  }
+  section#Career-hero {
+    padding-bottom: 27rem;
+  }
+}

@@ -1,0 +1,162 @@
+/* Responsive CSS for Menu */
+
+@media (max-width: 991px) {
+  .container {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  nav {
+    line-height: 70px;
+  }
+  .header-nav {
+    background: #fff;
+  }
+
+  .menu-toggler {
+    display: block !important;
+    margin: 0 50px;
+  }
+
+  .menu {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #ffffff;
+    top: 90px;
+    right: -100%;
+    transition: all 0.4s linear;
+  }
+  .menu ul li a {
+    color: #000 !important;
+  }
+  .logo {
+    padding-left: 3rem;
+  }
+
+  a.login-btn {
+    margin-left: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  .menu.active {
+    right: 0;
+  }
+
+  .menu-toggler span {
+    transition: all 0.2s linear;
+  }
+  .menu-toggler.active span:first-child {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  .menu-toggler.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggler.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 10px;
+  }
+  .form-hero-content h1 {
+    padding-left: 4rem;
+  }
+}
+
+/* ============================= */
+/* Form Page Responsive CSS */
+/* ============================= */
+
+@media (min-width: 300px) and (max-width: 767px) {
+  /* Nav Css */
+  .logo img {
+    max-width: 8rem;
+  }
+  .form-hero-content {
+    padding: 5rem 0;
+  }
+  .form-hero-content h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-left: 0;
+  }
+  .form-wrapper {
+    padding: 10rem 3rem;
+  }
+  .input-field {
+    width: 100%;
+  }
+  .footer-logo img {
+    width: 8rem;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-logo {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .footer-nav {
+    padding-top: 6rem;
+    padding-bottom: 0;
+  }
+  .footer-menu ul {
+    display: block;
+    text-align: center;
+  }
+  .footer-menu ul {
+    padding-left: 0;
+  }
+  .footer-menu ul li {
+    margin-left: 0;
+  }
+  .footer-menu ul li {
+    padding-bottom: 1.7rem;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-social {
+    padding: 3rem 0;
+  }
+  .footer-copy {
+    display: block;
+  }
+  .footer-copy a {
+    text-decoration: underline;
+    margin-left: 2.5rem;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo img {
+    max-width: 9rem;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+  #Form-hero {
+    padding-bottom: 30rem;
+  }
+  .form-wrapper {
+    margin-top: -22rem;
+  }
+  .form-hero-content h1 {
+    font-size: 7rem;
+  }
+  .input-field label,
+  .app-store label {
+    font-size: 2.2rem;
+  }
+  .footer-wrapper {
+    height: 45vh;
+  }
+  .footer-nav {
+    padding-top: 17rem;
+  }
+}

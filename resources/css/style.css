@@ -1,0 +1,339 @@
+/* Base CSS Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* Adding Fonts */
+
+/* Sailec Font */
+
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecLight.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecRegular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecMedium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Sailec;
+  src: url(../fonts/SailecBold.otf);
+  font-weight: 700;
+}
+
+/* Graphik Font */
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikRegular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikMedium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikSemibold.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikBold.otf);
+  font-weight: 700;
+}
+
+/* :root {
+  --gray: #f5f5f5;
+} */
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+/* Section Spacing */
+
+/* Header Section CSS Start */
+
+/* Navigation Section CSS Start */
+
+.header-wrapper {
+  background-image: url(../images/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-nav {
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.header-nav.sticky {
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(173 173 173) 0px 0px 3px 1px;
+}
+.sticky .menu ul li a {
+  color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.logo {
+  max-width: 10rem;
+}
+
+nav .menu ul {
+  display: flex;
+}
+nav .menu ul li {
+  list-style: none;
+  margin-left: 3rem;
+}
+nav .menu ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Sailec;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+nav .menu ul li a:hover {
+  color: #ff723a;
+}
+
+a.login-btn {
+  background: #1b5d93;
+  color: #fff !important;
+  font-weight: 300 !important;
+  padding: 1.1rem 2.7rem;
+  border-radius: 2.5rem;
+  transition: all 250ms;
+}
+a.login-btn:hover {
+  opacity: 0.8;
+}
+
+nav .menu-toggler {
+  background: none;
+  border: none;
+  outline: none;
+  width: 3rem;
+  z-index: 999;
+  display: none;
+}
+nav .menu-toggler span {
+  position: relative;
+  display: block;
+  background: #09b6df;
+  height: 0.3rem;
+  margin: 0.7rem 0;
+  border-radius: 1rem;
+}
+
+/* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+#Form-hero {
+  padding-bottom: 12rem;
+  padding-top: 15rem;
+}
+
+.form-hero-content h1 {
+  font-family: "Sailec";
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.form-hero-img img {
+  width: 100%;
+}
+
+.form-hero-img {
+  max-width: 70%;
+  margin: auto;
+}
+
+/* Hero Section CSS End */
+
+/* Header Section CSS End */
+
+/* Form Section HTML Start */
+
+.form-wrapper {
+  background: white;
+  padding: 10rem 15rem;
+  box-shadow: 0px 70px 150px rgba(35, 41, 126, 0.1);
+  border-radius: 2rem;
+  margin-top: -10rem;
+}
+.input-field {
+  width: 46%;
+  margin-bottom: 3rem;
+}
+
+.input-field input,
+.app-store input {
+  background: #f5f5f5;
+  padding: 1.6rem 2rem;
+  border-radius: 0.7rem;
+  border: none;
+  outline: 0;
+}
+.input-field label,
+.app-store label {
+  font-family: "Sailec";
+  font-size: 1.6rem;
+  color: #283a48;
+  padding-bottom: 1rem;
+}
+
+::placeholder {
+  color: #102230 !important;
+  font-family: Graphik;
+  font-size: 1.2rem;
+}
+
+button.submit-btn {
+  background: linear-gradient(90deg, #ffa15e 0%, #ff4f22 100%);
+  box-shadow: 2px 10px 50px rgba(255, 154, 89, 0.3);
+  border-radius: 2rem;
+  border: none;
+  outline: 0;
+  font-family: "Graphik";
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  transition: all 250ms;
+}
+button.submit-btn:hover {
+  opacity: 0.8;
+}
+
+/* Form Section HTML End */
+
+/* Footer Section CSS Start */
+
+#Footer {
+  padding-top: 10rem;
+}
+
+.footer-wrapper {
+  background-image: url(../images/footer-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-nav {
+  padding-top: 15rem;
+}
+.footer-logo {
+  max-width: 10rem;
+}
+
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu ul li {
+  margin-left: 3rem;
+}
+
+.footer-menu ul li a {
+  font-family: "Sailec";
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 300;
+}
+.footer-menu ul li a:hover {
+  color: #ff723a;
+}
+
+hr.footer-hr {
+  color: #cfd5e4;
+  margin: 3rem 0;
+}
+.footer-copy {
+  display: flex;
+}
+.footer-copy li {
+  text-decoration: underline;
+}
+
+.footer-copy li,
+.footer-copy a {
+  list-style: none;
+  font-family: "Graphik";
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+.footer-copy a {
+  text-decoration: underline;
+  margin-left: 2.5rem;
+}
+.footer-copy a:first-child {
+  margin-left: 0rem;
+}
+.footer-social {
+  font-size: 1.5rem;
+}
+
+.footer-social i {
+  margin-left: 1rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5rem;
+}
+.footer-social i:hover {
+  background: #fff;
+  color: #5919ad;
+}
+/* Footer Section CSS End */
