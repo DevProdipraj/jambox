@@ -13,4 +13,4 @@
 - **Responsive design** — looks great on any device
 - **Musically styled** — built with music vibes in mind
 - **Highly adaptable** — customize the look and content to make it your own
-- **Hosting-friendly** — works seamlessly with GitHub Pages, Netlify, etc.
+
